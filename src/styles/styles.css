@@ -1,0 +1,342 @@
+/* Alapvető beállítások */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #142339;
+    color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Link formázása */
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+
+/* Idő és város információ stílusa */
+.time, .city {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.weather-icon {
+    font-size: 30px;
+}
+
+/* Leíró szövegek formázása */
+.description {
+    font-size: 14px;
+    margin: 2px;
+}
+
+/* Hőmérséklet információk */
+.temperature {
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+
+/* Keresési találatok */
+.search-results {
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.search-item {
+    margin: 10px 0;
+}
+/*
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+*/
+input {
+    padding: 10px;
+    margin-top: 20px; 
+    font-size: 18px;
+    border-radius: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 20px;
+    border-color: black;
+    background: transparent;
+    color:white;
+}
+input::placeholder{
+    color:lightblue;
+}
+
+/* Nagy plusz gomb */
+.plusButton {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00FF00; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*
+.backButton {
+    font-size: 35px;
+    color: #0b619b; 
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%); 
+}
+*/
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    background-color: #142339;
+    border-radius: 8px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+  }
+  
+  .container_list {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #142339;
+    border-radius: 8px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+  }
+  .backButton {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .weather-info {
+    text-align: left;
+  }
+  
+  .loading-text {
+    font-style: italic;
+    color: #888;
+  }
+  
+
+  /* Általános gomb stílusok */
+.vdelete, .vsave {
+    font-size: 14px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    margin-right: 5px; /* kis távolság a gombok között, ha mellettük vannak */
+    outline: none; /* eltávolítja az alapértelmezett fókusz stílust */
+}
+
+.vdelete:hover, .vsave:hover {
+    transform: scale(1.01); /* A gombok kicsit nagyobbá válnak, amikor rájuk húzzák az egeret */
+}
+
+.vdelete {
+    background-color: #e74c3c; /* Világos piros háttér */
+    color: white;
+    margin-left: 30px;
+}
+li{
+    margin-top: 10px;
+}
+.vdelete:hover {
+    background-color: #c0392b; /* Sötétebb piros háttér, amikor rájuk húzzák az egeret */
+}
+
+/* Specifikus stílusok a Mentés gombhoz */
+.vsave {
+    background-color: #2ecc71; /* Világos zöld háttér */
+    color: white;
+}
+
+.vsave:hover {
+    background-color: #27ae60; /* Sötétebb zöld háttér, amikor rájuk húzzák az egeret */   
+}
+
+.container_addcity{
+    background-color: transparent;
+    width: 300px;
+    color:#277cbb;
+}
+
+
+
+div.custom-select__input-container{
+    color:lightblue;
+
+}
+div.custom-select__single-value{
+    color:lightblue;
+}
+
+/* React-select választó lista alapállapotú stílusa */
+div.custom-select__control {
+    background-color: transparent;
+    color: lightblue;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: lightblue;
+
+}
+span#react-select-3-live-region{
+    border-color: transparent;
+}
+
+span.custom-select__indicator-separator{
+    background-color:transparent;
+}
+
+/* React-select választó lista aktív (fókuszált) állapotú stílusa */
+div.custom-select__control--is-focused {
+    background-color: #142339;
+    color:lightblue;
+}
+
+/* React-select választó lista opcióinak stílusa */
+div.custom-select__option {
+    background-color: #142339;
+    color: lightblue;
+    border: 0px;
+}
+
+/* React-select választó lista kiválasztott opciójának stílusa */
+div.custom-select__option--is-selected {
+    background-color: #142339;
+    color: lightblue;
+}
+
+/* React-select választó lista opciójának stílusa az egérrel való ráhúzáskor (hover) */
+div.custom-select__option--is-focused {
+    background-color: #142339; 
+}
+div.custom-select__menu{
+    background-color: #142339;
+    border:0px;
+    box-shadow: none;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+    width: 10px;  /* Állítsa be a scrollbar szélességét */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);  /* Az aktív "húzó" rész színe */
+    border-radius: 5px;  /* Kerekítse le a széleket */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);  /* A scrollbar pályájának színe */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0);  /* Először az aktív "húzó" rész színe, majd a scrollbar pályájának színe */
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+.custom-select__control--is-focused {
+    border-color: #263238; /* vagy bármely más színt, amit szeretnél használni a keret színére */
+    box-shadow: none;
+}
+
+.highlight {
+    color: lightblue;  /* Válaszd ki a kívánt színt! */
+}
+
+  .city-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .backButton img {
+    width: 30px;
+  }
+  
+  .weather-details {
+    display: flow;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+  }
+  
+  .weather-item {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    width: 70%;
+    max-width: 400px;
+  }
+  
+  .icon, .value {
+    flex: 1;
+  }
+  
+  .icon {
+    text-align: left;
+  }
+  
+  .value {
+    text-align: right;
+  }
+    
+  .container ul {
+    list-style-type: none; /* Eltávolítja a felsorolás jelet */
+    padding-left: 0;      /* Eltávolítja az alapértelmezett margót */
+}
+
+.container li {
+    display: flex;
+    justify-content: space-between; /* A tartalmakat a két végponthoz igazítja: a várost balra, a gombot jobbra */
+    align-items: center;             /* Függőleges középre igazítja az elemeket */
+    margin-bottom: 10px;            /* Egy kis térköz az elemek között */
+}
+
+h1.timehm{
+    color:#277cbb;
+}
